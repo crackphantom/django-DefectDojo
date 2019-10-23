@@ -1,0 +1,35 @@
+{
+	"data": {
+		"repository": {
+		    "name":"fake-repo",
+			"vulnerabilityAlerts": {
+				"edges": [{
+						"cursor": "fakecursorbase64=="
+					}
+				],
+				"nodes": [{
+						"id": "fakeidbase64",
+						"vulnerableManifestFilename": "fakevuln.filename",
+						"vulnerableManifestPath": "fakevuln.filename",
+						"vulnerableRequirements": "= 1.1.0",
+						"securityVulnerability": {
+							"advisory": {
+								"databaseId": 1234,
+								"description": "A vulnerability was found in fakemodule before v1.1.0, the affected versions of this package are vulnerable to Bad Behavior attacks.",
+								"origin": "fake origin",
+								"publishedAt": "2019-01-01T00:00:00Z",
+								"summary": "High severity vulnerability that affects fakemodule"
+							},
+							"package": {
+								"name": "fakemodule",
+								"ecosystem": "NPM"
+							},
+							"severity": "HIGH",
+							"vulnerableVersionRange": "< 1.1.0"
+						}
+					}
+				]
+			}
+		}
+	}
+}

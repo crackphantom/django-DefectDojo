@@ -356,7 +356,8 @@ class ImportScanForm(forms.Form):
                          ("Sslyze Scan", "Sslyze Scan"),
                          ("Testssl Scan", "Testssl Scan"),
                          ("Hadolint Dockerfile check", "Hadolint Dockerfile check"),
-                         ("Aqua Scan", "Aqua Scan"))
+                         ("Aqua Scan", "Aqua Scan"),
+                         ("GitHub Vulnerability Alerts", "GitHub Vulnerability Alerts"))
 
     SORTED_SCAN_TYPE_CHOICES = sorted(SCAN_TYPE_CHOICES, key=lambda x: x[1])
     scan_date = forms.DateTimeField(
